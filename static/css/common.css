@@ -1,0 +1,31 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    margin: 20px;
+}
+.thin {
+    font-weight: 100
+}
+.light {
+    font-weight: 300
+}
+.regular {
+    font-weight: 400
+}
+.medium {
+    font-weight: 500
+}
+.bold {
+    font-weight: 700
+}
+.bolder {
+    font-weight: 900
+}
+
+#app {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #333333;
+}
