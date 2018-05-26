@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url("/static/css/navigation.css");
+@import url("/static/css/slider.css");
 
 body {
     font-family: 'Noto Sans KR', sans-serif;
