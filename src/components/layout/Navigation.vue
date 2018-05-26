@@ -40,6 +40,7 @@ export default {
 .nav {
   position: relative;
   height: 44px;
+  z-index: 999999;
 }
 
 .nav .logo {

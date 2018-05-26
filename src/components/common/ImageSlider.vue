@@ -86,7 +86,6 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: 1000;
   }
 
   .image-area button {
@@ -128,6 +127,7 @@ export default {
     position: relative;
     width: 100%;
     height: auto;
+    z-index: -3;
   }
 
   .main-image {
