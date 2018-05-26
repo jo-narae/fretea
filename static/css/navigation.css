@@ -6,6 +6,7 @@
 
 .nav .logo {
     float: left;
+    margin-left: 20px;
 }
 
 .nav .logo img {
@@ -93,7 +94,6 @@
 
 .sub-menu ul li {
     border-bottom: 1px solid #1d1d1d;
-    padding-left: 20px;
 }
 
 .close {
@@ -119,6 +119,7 @@
         position: fixed;
         top: 10px;
         left: 10px;
+        margin-left: 0px;
     }
 
     .nav .logo img {

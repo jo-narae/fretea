@@ -5,15 +5,18 @@
       :mainImage="true"
       :description="description">
     </image-slider>
+    <main-process></main-process>
   </div>
 </template>
 
 <script>
 import ImageSlider from '@/components/common/ImageSlider.vue'
+import MainProcess from '@/components/main/Process.vue'
 
 export default {
   components: {
     ImageSlider,
+    MainProcess,
   },
   data() {
     return {
