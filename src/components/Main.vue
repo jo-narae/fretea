@@ -16,7 +16,7 @@ export default {
       imagePath: [
         { path: "/static/img/tea.jpg" },
         { path: "/static/img/milktea.jpg" },
-        { path: "/static/img/tea.jpg" },
+        { path: "/static/img/coffee.jpg" },
       ],
     }
   },
