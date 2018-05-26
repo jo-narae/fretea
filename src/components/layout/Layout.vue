@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navigation class="mb20"></navigation>
+    <navigation></navigation>
     <router-view></router-view>
   </div>
 </template>

@@ -1,4 +1,6 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url("/static/css/navigation.css");
+
 body {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
@@ -45,6 +47,6 @@ body {
 
 @media (max-width: 486px) {
     .content {
-        margin-top: 60px;
+        margin-top: 54px;
     }
 }

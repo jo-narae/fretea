@@ -1,0 +1,149 @@
+.nav {
+    position: relative;
+    height: 44px;
+    z-index: 999999;
+}
+
+.nav .logo {
+    float: left;
+}
+
+.nav .logo img {
+    height: 44px;
+}
+
+.nav ul.web-menu {
+    position: relative;
+    transform: translateY(40%);
+    text-align: right;
+}
+
+.nav ul.web-menu li{
+    display: inline-block;
+    position: relative;
+    font-weight: 700;
+    padding-right: 14px;
+}
+
+.nav ul.web-menu li:after{
+    content: "|";
+    font-weight: 100 !important;
+    font-size: 10px;
+    position: fixed;
+    color: #e0e0e0;
+    transform: translate(7px, 15%);
+}
+
+.nav ul.web-menu li:last-child:after{
+    content: "";
+}
+
+.nav ul.web-menu {
+    display: block;
+}
+.nav ul.mobile-menu {
+    display: none;
+}
+
+.sub-menu {
+    font-size: 14px;
+}
+
+.sub-menu-active {
+    background-color: #5e4a8a;
+    color: #ffffff;
+    padding: 0 10px 0 10px;
+    margin: 0 -10px 0 -10px;
+    border-radius: 10px;
+}
+
+.sub-menu-active svg {
+    color: #ffffff;
+}
+
+.menu-area-active {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,.7);
+}
+
+.sub-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100%;
+    background: #000000;
+    transition: 0.3s;
+}
+
+.sub-menu ul {
+    list-style-type: none;
+    text-align: left;
+    line-height: 2.3;
+    padding-left: 0px;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.sub-menu ul li {
+    border-bottom: 1px solid #1d1d1d;
+    padding-left: 20px;
+}
+
+.close {
+    cursor: pointer;
+    padding-left: 70%;
+}
+  
+.sub-menu-text {
+    padding-left: 20px;
+}
+
+@media (max-width: 486px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        height: 54px;
+    }
+
+    .nav .logo {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+
+    .nav .logo img {
+        height: 34px;
+    }
+
+    .more {
+        position: fixed;
+        top: 0;
+        right: 20px;
+    }
+
+    .nav ul.mobile-menu li{
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        padding: 3px 0 3px 0;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+
+    .nav ul.web-menu {
+        display: none;
+    }
+    .nav ul.mobile-menu {
+        display: block;
+    }
+}
