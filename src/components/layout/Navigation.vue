@@ -91,6 +91,12 @@ export default {
     height: 34px;
   }
 
+  .nav .logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+
   .nav .logo img {
     height: 34px;
   }

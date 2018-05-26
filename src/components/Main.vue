@@ -1,6 +1,10 @@
 <template>
   <div class="content">
-    <image-slider :imagePath="imagePath"></image-slider>
+    <image-slider
+      :imagePath="imagePath"
+      :mainImage="true"
+      :description="description">
+    </image-slider>
   </div>
 </template>
 
@@ -18,10 +22,12 @@ export default {
         { path: "/static/img/milktea.jpg" },
         { path: "/static/img/coffee.jpg" },
       ],
+      description: [
+        { subTitle: 'Subscription', mainTitle: '나만의 티타임 시간을 가지세요', buttonText: '정기배송 신청' },
+        { subTitle: 'Recommend', mainTitle: '나에게 어울리는 차를 찾아보세요', buttonText: '추천 테스트' },
+        { subTitle: 'Shop', mainTitle: '내가 원하는 차만 골라 담으세요', buttonText: 'SHOP 바로가기' }
+      ]
     }
   },
 }
 </script>
-
-<style>
-</style>
