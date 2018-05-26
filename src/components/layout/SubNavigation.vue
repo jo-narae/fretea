@@ -34,14 +34,14 @@ export default {
   }
 
   .sub-menu svg {
-    color: #51c8c8;
+    color: #5e4a8a;
     width: 13px;
     height: 13px;
     padding-right: 10px;
   }
 
   .sub-menu-active {
-    background-color: #51c8c8;
+    background-color: #5e4a8a;
     color: #ffffff;
     padding: 0 10px 0 10px;
     margin: 0 -10px 0 -10px;

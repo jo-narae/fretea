@@ -21,12 +21,12 @@
 </template>
 
 <script>
-import SubNavigation from './SubNavigation.vue'
+import SubNavigation from '@/components/layout/SubNavigation.vue'
 
 export default {
   name: 'navigation',  
   components: {
-      SubNavigation,
+    SubNavigation,
   },
   methods: {
     subMenuOpen() {
@@ -52,7 +52,7 @@ export default {
 
 .nav ul.web-menu {
   position: relative;
-  transform: translateY(30%);
+  transform: translateY(40%);
   text-align: right;
 }
 
@@ -102,15 +102,16 @@ export default {
 
   .mobile-menu svg {
     color: #ffffff;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
+    opacity: 0.5;
   }
 
   .nav ul.mobile-menu li{
     display: inline-block;
     position: relative;
     text-align: center;
-    background-color: #51c8c8;
+    background-color: #5e4a8a;
     padding: 3px 0 3px 0;
     width: 28px;
     border-radius: 100%;
