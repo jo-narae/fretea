@@ -1,11 +1,19 @@
 .nav {
-    position: relative;
-    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 0px;
     z-index: 999999;
+}
+
+.main-nav {
+    color: #ffffff;
 }
 
 .nav .logo {
     float: left;
+    margin-top: 15px;
     margin-left: 20px;
 }
 
@@ -15,14 +23,13 @@
 
 .nav ul.web-menu {
     position: relative;
-    transform: translateY(40%);
     text-align: right;
 }
 
 .nav ul.web-menu li{
     display: inline-block;
     position: relative;
-    font-weight: 700;
+    font-weight: 500;
     padding-right: 14px;
 }
 
@@ -30,7 +37,7 @@
     content: "|";
     font-weight: 100 !important;
     font-size: 10px;
-    position: fixed;
+    position: absolute;
     color: #e0e0e0;
     transform: translate(7px, 15%);
 }
@@ -107,17 +114,15 @@
 
 @media (max-width: 486px) {
     .nav {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        background: #ffffff;
-        height: 54px;
     }
 
     .nav .logo {
-        position: fixed;
-        top: 10px;
+        position: absolute;
+        top: 0px;
         left: 10px;
         margin-left: 0px;
     }
@@ -127,17 +132,18 @@
     }
 
     .more {
-        position: fixed;
+        position: absolute;
         top: 0;
-        right: 20px;
+        right: 10px;
     }
 
     .nav ul.mobile-menu li{
         display: inline-block;
         position: relative;
         text-align: center;
-        padding: 3px 0 3px 0;
-        border-radius: 100%;
+        padding: 5px;
+        border: 1.5px #ffffff57 solid;
+        border-radius: 8px;
         cursor: pointer;
     }
 
@@ -146,5 +152,6 @@
     }
     .nav ul.mobile-menu {
         display: block;
+        margin-top: 10px;
     }
 }

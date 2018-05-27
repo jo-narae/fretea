@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <div class="nav" :class="[ mainPage ? 'main-nav' : '']">
     <div class="logo">
       <img src="/static/img/logo.png">
     </div>
@@ -24,14 +24,26 @@
 import SubNavigation from '@/components/layout/SubNavigation.vue'
 
 export default {
-  name: 'navigation',  
+  name: 'navigation',
   components: {
     SubNavigation,
+  },
+  data() {
+    return {
+      mainPage: false,
+    }
   },
   methods: {
     subMenuOpen() {
       this.$refs.subNav.slide();
     },
   },
+  mounted() {
+    if (this.$router.history.current.path === '/') {
+      this.mainPage = true;
+    } else {
+      this.mainPage = false;
+    }
+  }
 }
 </script>
