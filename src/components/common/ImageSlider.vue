@@ -46,13 +46,14 @@ export default {
     },
     description: {
       type: Array,
-    }
+    },
   },
   data() {
     return {
       percent: 0,
       imageIndex: 1,
       dotActive: 0,
+      imageSlide: null,
     }
   },
   methods: {
@@ -88,7 +89,25 @@ export default {
     },
     animation() {
       document.querySelector('.image-listbox').style.transform = `translate3d(${this.percent}%, 0, 0`;
-    }
+    },
+  },
+  mounted() {
+    this.imageSlide = setInterval(() => {
+      if (this.imageIndex >= 1) {
+        if (this.imageIndex === this.imagePath.length) {
+          this.imageIndex = 1;
+          this.percent = 0;
+        } else {
+          this.percent = -(this.imageIndex * 100);
+          this.imageIndex++;
+        }
+      }
+      this.dotActive = this.imageIndex - 1;
+      this.animation();
+    }, 5000);
+  },
+  destroyed() {
+    clearInterval(this.imageSlide);
   },
 }
 </script>
