@@ -26,6 +26,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       '@': resolve('src'),
+      'styles': resolve('src/assets/style/')
     }
   },
   module: {
@@ -63,7 +64,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      }
+      },
+      {
+        test: /\.s[ac]ss$/,
+        include: /node_modules/,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
+      },
     ]
   },
   node: {

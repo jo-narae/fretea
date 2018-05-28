@@ -1,0 +1,136 @@
+$white_color: #ffffff;
+$gray_color: #e0e0e0;
+$background_color: #5e4a8a;
+
+.nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	margin-top: 0px;
+	z-index: 999999;
+	.logo {
+		float: left;
+		margin-top: 15px;
+		margin-left: 20px;
+		img {
+			height: 44px;
+		}
+	}
+	ul.web-menu {
+		position: relative;
+		text-align: right;
+		display: block;
+		li {
+			display: inline-block;
+			position: relative;
+			font-weight: 500;
+			padding-right: 14px;
+			&:after {
+				content: "|";
+				font-weight: 100 !important;
+				font-size: 10px;
+				position: absolute;
+				color: $gray_color;
+				transform: translate(7px, 15%);
+			}
+			&:last-child {
+				&:after {
+					content: "";
+				}
+			}
+		}
+	}
+	ul.mobile-menu {
+		display: none;
+	}
+}
+.main-nav {
+	color: $white_color;
+}
+.sub-menu {
+	font-size: 14px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 0px;
+	height: 100%;
+	background: #000000;
+	transition: 0.3s;
+	ul {
+		list-style-type: none;
+		text-align: left;
+		line-height: 2.3;
+		padding-left: 0px;
+		margin: 0;
+		color: $white_color;
+		font-weight: 500;
+		font-size: 16px;
+		li {
+			border-bottom: 1px solid #1d1d1d;
+		}
+	}
+}
+.sub-menu-active {
+	background-color: $background_color;
+	color: $white_color;
+	padding: 0 10px 0 10px;
+	margin: 0 -10px 0 -10px;
+	border-radius: 10px;
+	svg {
+		color: $white_color;
+	}
+}
+.menu-area-active {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.7);
+}
+.close {
+	cursor: pointer;
+	padding-left: 70%;
+}
+.sub-menu-text {
+	padding-left: 20px;
+}
+@media (max-width: 486px) {
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		.logo {
+			position: absolute;
+			top: 0px;
+			left: 10px;
+			margin-left: 0px;
+			img {
+				height: 34px;
+			}
+		}
+		ul.mobile-menu {
+			li {
+				display: inline-block;
+				position: relative;
+				text-align: center;
+				padding: 5px;
+				border: 1.5px #ffffff57 solid;
+				border-radius: 8px;
+				cursor: pointer;
+			}
+			display: block;
+			margin-top: 10px;
+		}
+		ul.web-menu {
+			display: none;
+		}
+	}
+	.more {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+}
