@@ -1,5 +1,3 @@
-$white_color: #ffffff;
-
 .about-image {
 	background-image: url(/static/img/gift.jpg);
 	visibility: visible;
@@ -25,7 +23,7 @@ $white_color: #ffffff;
 .about-content {
 	position: absolute;
 	z-index: 10;
-	color: $white_color;
+	color: $color_white;
 	font-weight: 400;
 	vertical-align: middle;
 	top: 45%;
