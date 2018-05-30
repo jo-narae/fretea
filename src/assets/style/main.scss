@@ -1,5 +1,4 @@
 div[role="about"] {
-	margin: 20px;
 	.about-image {
 		background-image: url(/static/img/gift.jpg);
 		visibility: visible;
@@ -40,9 +39,11 @@ div[role="process"] {
 	.step-title {
 		@extend .bolder;
 		font-size: 30px;
+		margin-top: 3rem;
+		margin-bottom: 3rem;
 	}
 	.step-head {
-		@extend .bolder;
+		@extend .bold;
 		font-size: 1.2rem;
 		line-height: 2;
 	}
@@ -50,7 +51,6 @@ div[role="process"] {
 		font-size: 0.9rem;
 	}
 	.step-content {
-		margin-top: 3rem;
 		.step-box {
 			display: inline-block;
 			position: relative;
@@ -78,7 +78,8 @@ div[role="process"] {
 		}
 		.about-detail {
 			position: relative;
-			font-size: 0.8rem;
+			font-size: 0.9rem;
+    		letter-spacing: -1.2px;
 			text-align: left;
 			word-break: break-all;
 			word-wrap: break-word;
@@ -88,13 +89,13 @@ div[role="process"] {
 	div[role="process"] {
 		.step-title {
 			font-size: 25px;
-			margin-bottom: 1rem;
+			margin-top: 2rem;
+			margin-bottom: 2rem;
 		}
 		.step-description {
 			font-size: 0.8rem;
 		}
 		.step-content {
-			margin-top: 2.3rem;
 			.step-box {
 				display: inline-block;
 				min-width: 12rem;

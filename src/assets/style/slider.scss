@@ -23,7 +23,7 @@
     font-size: 1.3rem;
     text-align: left;
     line-height: 1.2;
-    @extend .bolder;
+    @extend .medium;
 }
 .main-image-title {
 	font-size: 50px;
@@ -31,12 +31,12 @@
 	line-height: 1;
 }
 .button-router {
+	@extend .medium;
 	border: solid 3px $color_white !important;
 	margin-top: 50px;
 	padding: 10px;
 	color: $color_white;
 	font-size: 18px;
-	font-weight: 500;
 	cursor: pointer;
 }
 .prev-next-area {

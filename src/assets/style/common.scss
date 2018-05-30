@@ -9,22 +9,19 @@ body {
 	margin: 0px;
 }
 .thin {
-	font-weight: 100;
+	font-family: $font_notokr_thin !important;
 }
 .light {
-	font-weight: 300;
-}
-.regular {
-	font-weight: 400;
+	font-family: $font_notokr_light !important;
 }
 .medium {
-	font-weight: 500;
+	font-family: $font_notokr_medium !important;
 }
 .bold {
-	font-weight: 700;
+	font-family: $font_notokr_bold !important;
 }
 .bolder {
-	font-weight: 900;
+	font-family: $font_notokr_black !important;
 }
 #app {
 	-webkit-font-smoothing: antialiased;
