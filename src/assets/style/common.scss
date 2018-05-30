@@ -9,19 +9,19 @@ body {
 	margin: 0px;
 }
 .thin {
-	font-family: $font_notokr_thin !important;
+	font-family: $font_notokr_thin, $font_family !important;
 }
 .light {
-	font-family: $font_notokr_light !important;
+	font-family: $font_notokr_light, $font_family !important;
 }
 .medium {
-	font-family: $font_notokr_medium !important;
+	font-family: $font_notokr_medium, $font_family !important;
 }
 .bold {
-	font-family: $font_notokr_bold !important;
+	font-family: $font_notokr_bold, $font_family !important;
 }
 .bolder {
-	font-family: $font_notokr_black !important;
+	font-family: $font_notokr_black, $font_family !important;
 }
 #app {
 	-webkit-font-smoothing: antialiased;
