@@ -48,10 +48,32 @@ body {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	color: white;
+	color: $color_white;
 	margin-top: 30px;
 	padding: 20px;
-	background-color: $font_base_color;
+	background-color: $color_black;
+	text-align: left;
+	@extend .thin;
+	ul {
+		list-style-type: none;
+		width: 45%;
+		padding: 0px;
+		font-size: 13px;
+		li {
+			display: inline-block;
+			margin-right: 20px;
+			.footer-head {
+				color: $color_point_yellow;
+				@extend .light;
+				margin-right: 1rem;
+			}
+		}
+		.copyright {
+			color: $color_warm_gray;
+			@extend .light;
+			line-height: 3;
+		}
+	}
 }
 @media (max-width: 486px) {
 	.content {
@@ -60,5 +82,10 @@ body {
 	.main-content {
 		margin-top: 0px;
 		transform: translateY(0%);
+	}
+	.footer {
+		ul {
+			width: 100%;
+		}
 	}
 }
