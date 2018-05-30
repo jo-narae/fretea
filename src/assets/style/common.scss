@@ -40,16 +40,24 @@ body {
 	z-index: -2;
 }
 .main-content {
-	position: absolute;
 	margin-top: 0px;
 	transform: translateY(0%);
+}
+.footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: white;
+	margin-top: 30px;
+	padding: 20px;
+	background-color: $font_base_color;
 }
 @media (max-width: 486px) {
 	.content {
 		margin-top: 54px;
 	}
 	.main-content {
-		position: absolute;
 		margin-top: 0px;
 		transform: translateY(0%);
 	}

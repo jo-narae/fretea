@@ -24,7 +24,7 @@
 import SubNavigation from '@/components/layout/SubNavigation.vue'
 
 export default {
-  name: 'navigation',
+  name: 'navigation-layer',
   components: {
     SubNavigation,
   },

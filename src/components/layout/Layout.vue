@@ -1,17 +1,20 @@
 <template>
   <div>
-    <navigation></navigation>
+    <navigation-layer></navigation-layer>
     <router-view></router-view>
+    <footer-layer></footer-layer>
   </div>
 </template>
 
 <script>
-import Navigation from '@/components/layout/Navigation.vue'
+import NavigationLayer from '@/components/layout/NavigationLayer.vue'
+import FooterLayer from '@/components/layout/FooterLayer.vue'
 
 export default {
   name: 'layout',
   components: {
-    Navigation,
+    NavigationLayer,
+    FooterLayer,
   },
 }
 </script>

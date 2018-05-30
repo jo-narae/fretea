@@ -51,10 +51,10 @@ div[role="process"] {
 		font-size: 0.9rem;
 	}
 	.step-content {
+		height: 18rem;
 		.step-box {
 			display: inline-block;
 			position: relative;
-			display: inline-block;
 			float: left;
 			width: 33%;
 			height: 100%;
@@ -96,6 +96,7 @@ div[role="process"] {
 			font-size: 0.8rem;
 		}
 		.step-content {
+			height: 11rem;
 			.step-box {
 				display: inline-block;
 				min-width: 12rem;
