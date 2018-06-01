@@ -8,10 +8,10 @@
         </svg>
       </div>
       <ul>
-        <li><a class="sub-menu-text">SHOP</a></li>
-        <li><a class="sub-menu-text">정기구독</a></li>
-        <li><a class="sub-menu-text">로그인</a></li>
-        <li><a class="sub-menu-text">고객센터</a></li>
+        <li><a>SHOP</a></li>
+        <li><a>정기구독</a></li>
+        <li><a>로그인</a></li>
+        <li><a>고객센터</a></li>
       </ul>
     </div>
   </div>
@@ -23,7 +23,7 @@ export default {
   methods: {
     slide() {
       if(document.querySelector('.sub-menu').offsetWidth === 0) {
-        document.querySelector('.sub-menu').style.width = "55%";
+        document.querySelector('.sub-menu').style.width = "100%";
         document.querySelector('.menu-area').classList.add('menu-area-active');
       } else {
         document.querySelector('.sub-menu').style.width = "0px";

@@ -1,7 +1,7 @@
 <template>
-  <div class="nav" :class="[ mainPage ? 'main-nav' : '']">
+  <div class="nav" :class="[ mainPage ? 'main-nav' : '', scrolled ? 'nav-color' : '']">
     <div class="logo">
-      <img src="/static/img/logo.png">
+      REFRESHMENT
     </div>
     <ul class="web-menu">
       <li>SHOP</li>
@@ -27,6 +27,9 @@ export default {
   name: 'navigation-layer',
   components: {
     SubNavigation,
+  },
+  props: {
+    scrolled: false,
   },
   data() {
     return {

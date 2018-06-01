@@ -1,18 +1,12 @@
 .nav {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	margin-top: 0px;
+	height: 50px;
 	z-index: 999999;
-	.logo {
-		float: left;
-		margin-top: 15px;
-		margin-left: 20px;
-		img {
-			height: 44px;
-		}
-	}
+	@extend .medium;
+	transition: 0.3s ease;
 	ul.web-menu {
 		position: relative;
 		text-align: right;
@@ -40,6 +34,16 @@
 		display: none;
 	}
 }
+.logo {
+	float: left;
+	margin-top: 15px;
+	margin-left: 20px;
+	@extend .bolder;
+}
+.nav-color {
+	background-color: $color_white;
+	color: $font_base_color !important;
+}
 .main-nav {
 	color: $color_white;
 }
@@ -51,19 +55,15 @@
 	width: 0px;
 	height: 100%;
 	background: $color_black;
-	transition: 0.3s;
+	transition: 0.2s;
+	@extend .bold;
 	ul {
 		list-style-type: none;
-		text-align: left;
-		line-height: 2.3;
+		line-height: 3.5;
 		padding-left: 0px;
-		margin: 0;
+		margin-top: 5rem;
 		color: $color_white;
-		font-weight: 500;
-		font-size: 16px;
-		li {
-			border-bottom: 1px solid $color_row_black;
-		}
+		font-size: 18px;
 	}
 }
 .sub-menu-active {
@@ -86,33 +86,22 @@
 }
 .close {
 	cursor: pointer;
-	padding-left: 70%;
-}
-.sub-menu-text {
-	padding-left: 20px;
+	padding-left: 80%;
 }
 @media (max-width: 486px) {
 	.nav {
-		position: absolute;
+		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
-		.logo {
-			position: absolute;
-			top: 0px;
-			left: 10px;
-			margin-left: 0px;
-			img {
-				height: 34px;
-			}
-		}
+		height: 50px;
+		z-index: 9998;
 		ul.mobile-menu {
 			li {
 				display: inline-block;
 				position: relative;
 				text-align: center;
 				padding: 5px;
-				border: 1.5px $color_opacity_white solid;
 				border-radius: 8px;
 				cursor: pointer;
 			}
@@ -122,6 +111,16 @@
 		ul.web-menu {
 			display: none;
 		}
+	}
+	.logo {
+		position: absolute;
+		top: 0px;
+		left: 10px;
+		margin-left: 0px;
+	}
+	.nav-color {
+		background-color: $color_black;
+		color: $color_white !important;
 	}
 	.more {
 		position: absolute;

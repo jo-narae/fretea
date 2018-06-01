@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navigation-layer></navigation-layer>
+    <navigation-layer :scrolled="scrolled"></navigation-layer>
     <router-view></router-view>
     <footer-layer></footer-layer>
   </div>
@@ -15,6 +15,19 @@ export default {
   components: {
     NavigationLayer,
     FooterLayer,
+  },
+  data () {
+    return {
+      scrolled: false
+    };
+  },
+  methods: {
+    handleScroll () {
+      this.scrolled = window.scrollY > 100;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
   },
 }
 </script>
