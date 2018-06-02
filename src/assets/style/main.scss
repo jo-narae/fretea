@@ -5,6 +5,7 @@ div[role="about"] {
 		height: 60rem;
 		background-size: cover;
 		background-position: 50% 50%;
+		transition: 0.3s ease;
 	}
 	.about-title {
 		@extend .medium;
@@ -20,8 +21,9 @@ div[role="about"] {
 		letter-spacing: -0.5px;
 	}
 	.about-content {
-		position: absolute;
+		position: relative;
 		z-index: 10;
+		text-align: left;
 		color: $color_white;
 		font-weight: 400;
 		vertical-align: middle;

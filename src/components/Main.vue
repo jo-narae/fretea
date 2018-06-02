@@ -29,7 +29,7 @@ export default {
         { path: "/static/img/main_one.jpg" },
         { path: "/static/img/main_two.jpg", right: true },
         { path: "/static/img/main_three.jpg", right: true },
-        { path: "/static/img/6.jpg" },
+        { path: "/static/img/main_four.jpg" },
       ],
       sliderImagePath: [
         { path: "/static/img/tea.jpg" },
@@ -43,5 +43,17 @@ export default {
       ]
     }
   },
+  methods: {
+    heightResize() {
+      const aboutImage = document.querySelectorAll('.about-image');
+      for (let i = 0; i < aboutImage.length; i += 1) {
+        aboutImage[i].style.height = (window.outerHeight-110) + 'px';
+      }
+    },
+  },
+  mounted () {
+    window.addEventListener('load', this.heightResize);
+    window.addEventListener('resize', this.heightResize);
+  }
 }
 </script>
