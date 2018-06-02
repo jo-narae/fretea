@@ -1,6 +1,7 @@
 .image-area {
 	position: relative;
 	overflow: hidden;
+	margin-top: 1rem;
 	button {
 		-webkit-appearance: none;
 		background: transparent;
@@ -15,7 +16,7 @@
 	font-weight: 400;
 	vertical-align: middle;
 	top: 50%;
-	left: 40%;
+	left: 35%;
 	transform: translate(-50%, -50%);
 	text-transform: uppercase;
 }
@@ -30,17 +31,18 @@
 	}
 }
 .main-image-title {
-	font-size: 50px;
+	font-size: 3rem;
 	text-align: left;
+	width: 42rem;
 	line-height: 1;
 }
 .button-router {
 	@extend .medium;
 	border: solid 3px $color_white !important;
 	margin-top: 50px;
-	padding: 10px;
+	padding: 5px;
 	color: $color_white;
-	font-size: 18px;
+	font-size: 1.2rem;
 	width: 40%;
 	cursor: pointer;
 }
@@ -83,7 +85,7 @@
 .main-image {
 	visibility: visible;
 	width: 100%;
-	height: 60rem;
+	height: 50rem;
 	opacity: 0.4;
 	background-size: cover;
 	background-position: 50% 50%;
@@ -150,9 +152,15 @@
 .button-dot-active {
 	background: $color_white !important;
 }
+@media (max-width: 1080px) {
+	.image-description {
+		left: 50%;
+	}
+}
 @media (max-width: 486px) {
 	.main-image {
 		height: 30rem;
+		background-position: 40% 50%;
 	}
 	.arrow {
 		svg {
@@ -181,18 +189,18 @@
 	.sub-image-title {
 		font-size: 12px;
 		text-align: left;
-		line-height: 3.2;
+		line-height: 2.2;
 	}
 	.main-image-title {
-		font-size: 28px;
+		font-size: 1.5rem;
 		text-align: left;
-		width: 250px;
+		width: 21rem;
 		line-height: 1;
 	}
 	.button-router {
 		border: solid 2px $color_white !important;
 		margin-top: 20px;
-		padding: 5px;
-		font-size: 14px;
+		padding: 3px;
+		font-size: 0.8rem;
 	}
 }

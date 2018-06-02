@@ -2,8 +2,10 @@
   <div class="image-area">
     <div v-if="description" class="image-description">
       <div class="sub-image-title"><span>{{description[dotActive].subTitle}}</span></div>
-      <div class="main-image-title">{{description[dotActive].mainTitle}}</div>
-      <button class="button-router">{{description[dotActive].buttonText}}</button>
+      <div class="main-image-title">
+        {{description[dotActive].mainTitle}}<br />
+        <button class="button-router">{{description[dotActive].buttonText}}</button>
+      </div>
     </div>
     <div v-if="prevNext" class="prev-next-area">
       <button class="arrow arrow-prev" :class="[imageIndex === 1 ? 'arrow-disable' : '']" @click="prev">

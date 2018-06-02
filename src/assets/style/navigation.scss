@@ -20,7 +20,6 @@
 				font-weight: 100 !important;
 				font-size: 10px;
 				position: absolute;
-				color: $color_light_gray;
 				transform: translate(7px, 15%);
 			}
 			&:last-child {
@@ -42,7 +41,7 @@
 	font-family: $logo_font !important;
 }
 .nav-color {
-	background-color: $color_white;
+	background-color: $color_white !important;
 	color: $font_base_color !important;
 }
 .main-nav {
@@ -120,7 +119,7 @@
 		margin-left: 0px;
 	}
 	.nav-color {
-		background-color: $color_black;
+		background-color: $color_black !important;
 		color: $color_white !important;
 	}
 	.more {
