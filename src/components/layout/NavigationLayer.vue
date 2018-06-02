@@ -1,7 +1,7 @@
 <template>
   <div class="nav" :class="[ mainPage ? 'main-nav' : '', scrolled ? 'nav-color' : '']">
     <div class="logo">
-      REFRESHMENT
+      FRETEA
     </div>
     <ul class="web-menu">
       <li>SHOP</li>

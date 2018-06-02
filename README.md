@@ -1,6 +1,6 @@
-# refreshments
+# Fretea
 
-> refreshments mini project
+> Fretea mini project
 
 ## Build Setup
 

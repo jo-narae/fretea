@@ -1,11 +1,11 @@
 <template>
   <div class="image-area">
     <div v-if="description" class="image-description">
-      <div class="sub-image-title">{{description[dotActive].subTitle}}</div>
+      <div class="sub-image-title"><span>{{description[dotActive].subTitle}}</span></div>
       <div class="main-image-title">{{description[dotActive].mainTitle}}</div>
       <button class="button-router">{{description[dotActive].buttonText}}</button>
     </div>
-    <div class="prev-next-area">
+    <div v-if="prevNext" class="prev-next-area">
       <button class="arrow arrow-prev" :class="[imageIndex === 1 ? 'arrow-disable' : '']" @click="prev">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="80px" viewBox="0 0 50 80" xml:space="preserve">
           <polyline fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "/>
@@ -46,6 +46,10 @@ export default {
     },
     description: {
       type: Array,
+    },
+    prevNext: {
+      type: Boolean,
+      default: true,
     },
   },
   data() {

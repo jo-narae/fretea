@@ -25,6 +25,13 @@ $color_point_blue: #47a3d2;
 $color_point_green: #8ce33e;
 $color_ultra_violet: #5e4a8a;
 
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Freckle+Face');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Kalam:700');
+$logo_font: 'Aclonica', sans-serif;
+$eng_title_font: 'Kalam', cursive;
+$about_title: 'Roboto Condensed', sans-serif;
+
 @font-face {
     font-family: 'notokr-thin';
     src: url('/static/fonts/NotoKR-Thin/notokr-thin.eot');

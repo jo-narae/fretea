@@ -15,15 +15,19 @@
 	font-weight: 400;
 	vertical-align: middle;
 	top: 50%;
-	left: 50%;
+	left: 40%;
 	transform: translate(-50%, -50%);
 	text-transform: uppercase;
 }
 .sub-image-title {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: left;
-    line-height: 1.2;
-    @extend .medium;
+	line-height: 2.5;
+	font-weight: 700;
+	font-family: $about_title !important;
+	span {
+		border-bottom: 1.2px solid $color_white;
+	}
 }
 .main-image-title {
 	font-size: 50px;
@@ -37,6 +41,7 @@
 	padding: 10px;
 	color: $color_white;
 	font-size: 18px;
+	width: 40%;
 	cursor: pointer;
 }
 .prev-next-area {
@@ -176,7 +181,7 @@
 	.sub-image-title {
 		font-size: 12px;
 		text-align: left;
-		line-height: 1.2;
+		line-height: 3.2;
 	}
 	.main-image-title {
 		font-size: 28px;

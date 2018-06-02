@@ -37,10 +37,11 @@ div[role="about"] {
 
 div[role="process"] {
 	.step-title {
-		@extend .bolder;
+		font-family: $eng_title_font !important;
 		font-size: 30px;
 		margin-top: 3rem;
 		margin-bottom: 3rem;
+		letter-spacing: 2px;
 	}
 	.step-head {
 		@extend .bold;

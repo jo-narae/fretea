@@ -38,7 +38,8 @@
 	float: left;
 	margin-top: 15px;
 	margin-left: 20px;
-	@extend .bolder;
+	font-size: 20px;
+	font-family: $logo_font !important;
 }
 .nav-color {
 	background-color: $color_white;
