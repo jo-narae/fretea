@@ -8,7 +8,7 @@
         </svg>
       </div>
       <ul>
-        <li><a>SHOP</a></li>
+        <li><a @click="movePage('shop')">SHOP</a></li>
         <li><a>정기구독</a></li>
         <li><a>로그인</a></li>
         <li><a>고객센터</a></li>
@@ -28,6 +28,13 @@ export default {
       } else {
         document.querySelector('.sub-menu').style.width = "0px";
         document.querySelector('.menu-area').classList.remove('menu-area-active');
+      }
+    },
+    movePage(page) {
+      if (page === 'home') {
+        this.$router.push({path: '/'});
+      } else if (page === 'shop') {
+        this.$router.push({path: '/shop'});
       }
     },
   }
