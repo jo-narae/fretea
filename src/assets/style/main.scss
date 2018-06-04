@@ -2,16 +2,20 @@ div[role="about"] {
 	.about-image {
 		visibility: visible;
 		width: 100%;
-		height: 60rem;
+		height: 58.1rem;
+		background-color: $color_opacity_brown;
+    	background-blend-mode: darken;
 		background-size: cover;
 		background-position: 50% 50%;
 		transition: 0.3s ease;
 	}
 	.about-title {
-		@extend .medium;
-		font-size: 3rem;
+		@extend .bold;
+		font-size: 2rem;
+		width: 40%;
 		z-index: 0;
-		line-height: 2;
+		line-height: 1.2;
+		letter-spacing: -2px;
 	}
 	.about-detail {
 		position: relative;
