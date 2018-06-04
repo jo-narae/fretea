@@ -3,18 +3,15 @@
     <main-about 
       :imagePath="mainImagePath">
     </main-about>
-    <main-process></main-process>
   </div>
 </template>
 
 <script>
 import MainAbout from '@/components/main/About.vue'
-import MainProcess from '@/components/main/Process.vue'
 
 export default {
   components: {
     MainAbout,
-    MainProcess,
   },
   data() {
     return {
