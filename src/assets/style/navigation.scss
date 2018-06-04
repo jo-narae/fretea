@@ -5,6 +5,7 @@
 	width: 100%;
 	height: 50px;
 	z-index: 999999;
+	color: $color_white;
 	@extend .medium;
 	transition: 0.3s ease;
 	ul.web-menu {
@@ -32,6 +33,9 @@
 	ul.mobile-menu {
 		display: none;
 	}
+	a {
+		cursor: pointer;
+	}
 }
 .logo {
 	float: left;
@@ -39,14 +43,16 @@
 	margin-left: 20px;
 	font-size: 20px;
 	font-family: $logo_font !important;
+	div {
+		cursor: pointer;
+		z-index: 999999;
+	}
 }
 .nav-color {
 	background-color: $color_white !important;
 	color: $font_base_color !important;
 }
-.main-nav {
-	color: $color_white;
-}
+
 .sub-menu {
 	font-size: 14px;
 	position: fixed;

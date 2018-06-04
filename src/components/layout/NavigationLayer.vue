@@ -1,10 +1,10 @@
 <template>
-  <div class="nav" :class="[ mainPage ? 'main-nav' : '', scrolled ? 'nav-color' : '']">
+  <div class="nav" :class="[ scrolled ? 'nav-color' : '']">
     <div class="logo">
-      FRETEA
+      <div @click="movePage('home')">FRETEA</div>
     </div>
     <ul class="web-menu">
-      <li>SHOP</li>
+      <li><a @click="movePage('shop')">SHOP</a></li>
       <li>정기구독</li>
       <li>로그인</li>
       <li>고객센터</li>
@@ -40,6 +40,13 @@ export default {
     subMenuOpen() {
       this.$refs.subNav.slide();
     },
+    movePage(page) {
+      if (page === 'home') {
+        this.$router.push({path: '/'});
+      } else if (page === 'shop') {
+        this.$router.push({path: '/shop'});
+      }
+    }
   },
   mounted() {
     if (this.$router.history.current.path === '/') {

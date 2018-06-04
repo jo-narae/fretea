@@ -26,7 +26,7 @@
         </li>
       </ul>
     </div>
-    <div class="black-cover">
+    <div class="image-cover">
       <div class="image-wrapper">
         <div class="image-listbox">
           <div v-for="(images, k) in imagePath" :key="k" class="image-slide">
