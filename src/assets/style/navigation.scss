@@ -80,6 +80,12 @@
 		color: $color_white;
 	}
 }
+.menu-area {
+	a {
+		display: inline-block;
+		width: 100%;
+	}
+}
 .menu-area-active {
 	position: fixed;
 	top: 0;
