@@ -94,26 +94,26 @@ iPad 3
 	}
 }
 /* Desktops and laptops ----------- */
-@media only screen  and (min-width : 1224px) {
+@media only screen and (min-width : 1224px) {
 	div[role="about"] {
 		.about-image {
 			height: 50rem !important;
 		}
 	}
 	.content-top {
-		margin-top: 15% !important;
+		margin-top: 10% !important;
 	}
 }
 
 /* Large screens ----------- */
-@media only screen  and (min-width : 1824px) {
+@media only screen and (min-width : 1824px) {
 	div[role="about"] {
 		.about-image {
 			height: 30rem !important;
 		}
 	}
 	.content-top {
-		margin-top: 15% !important;
+		margin-top: 10% !important;
 	}
 }
 
