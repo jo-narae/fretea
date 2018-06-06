@@ -1,7 +1,7 @@
 <template>
   <div class="content main-content mt50">
     <div>Login</div>
-    <div class="wrapper" style="width:70%; margin-left:15%;">
+    <div style="width:70%; margin-left:15%;">
         <input style="width:100%;" type="text" placeholder="아이디" />
         <input style="width:100%;" type="text" placeholder="비밀번호" />
         <button style="width:100%; background-color:#000; border:0px; color:#fff;">LOGIN</button>
@@ -30,10 +30,6 @@ export default {
     scrolled: true,
   },
   methods: {
-  },
-  mounted() {
-    this.$common.wrapperMinHeight();
-    window.addEventListener('resize', this.$common.wrapperMinHeight);
   },
 }
 </script>

@@ -1,7 +1,9 @@
 <template>
   <div>
     <navigation-layer :scrolled="scrolled"></navigation-layer>
-    <router-view></router-view>
+    <div class="wrapper">
+      <router-view></router-view>
+    </div>
     <footer-layer></footer-layer>
   </div>
 </template>
@@ -43,6 +45,10 @@ export default {
   created () {
     this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
+  },
+  mounted() {
+    this.$common.wrapperMinHeight();
+    window.addEventListener('resize', this.$common.wrapperMinHeight);
   },
 }
 </script>

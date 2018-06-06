@@ -5,43 +5,7 @@
       :prevNext="false"
       :description="description">
     </image-slider>
-    <br />
-    준비중<br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    준비중
   </div>
 </template>
 
@@ -65,8 +29,6 @@ export default {
         { subTitle: 'Shop', mainTitle: '원하는 차만 골라서 구매하세요', buttonText: '골라담기' }
       ]
     }
-  },
-  methods: {
   },
 }
 </script>

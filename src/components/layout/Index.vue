@@ -1,8 +1,6 @@
 <template>
   <div>
-    <layout
-    :navActive="navActive"
-    ></layout>
+    <layout :navActive="navActive"></layout>
   </div>
 </template>
 
