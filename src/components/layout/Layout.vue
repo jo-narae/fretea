@@ -16,6 +16,16 @@ export default {
     NavigationLayer,
     FooterLayer,
   },
+  props: {
+    pageName: {
+      type: String,
+    },
+  },
+  watch: {
+    pageName(to) {
+      this.handleScroll(to);
+    }
+  },
   data () {
     return {
       scrolled: false
@@ -23,10 +33,15 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.scrolled = window.scrollY > 100;
+      if(this.pageName === 'main' || this.pageName === 'shop') {
+        this.scrolled = window.scrollY > 100;
+      } else {
+        this.scrolled = true;
+      }
     }
   },
   created () {
+    this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
   },
 }

@@ -6,7 +6,7 @@
     <ul class="web-menu">
       <li><a @click="movePage('shop')">SHOP</a></li>
       <li>정기구독</li>
-      <li>로그인</li>
+      <li><a @click="movePage('login')">로그인</a></li>
       <li>고객센터</li>
     </ul>
     <div class="more">
@@ -31,11 +31,6 @@ export default {
   props: {
     scrolled: false,
   },
-  data() {
-    return {
-      mainPage: false,
-    }
-  },
   methods: {
     subMenuOpen() {
       this.$refs.subNav.slide();
@@ -43,17 +38,13 @@ export default {
     movePage(page) {
       if (page === 'home') {
         this.$router.push({path: '/'});
+      } else if (page === 'login') {
+        this.$router.push({path: '/login'});
       } else if (page === 'shop') {
         this.$router.push({path: '/shop'});
       }
+      
     }
   },
-  mounted() {
-    if (this.$router.history.current.path === '/') {
-      this.mainPage = true;
-    } else {
-      this.mainPage = false;
-    }
-  }
 }
 </script>
