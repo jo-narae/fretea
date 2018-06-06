@@ -46,9 +46,5 @@ export default {
     this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
   },
-  mounted() {
-    this.$common.wrapperMinHeight();
-    window.addEventListener('resize', this.$common.wrapperMinHeight);
-  },
 }
 </script>
