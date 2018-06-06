@@ -5,7 +5,7 @@ VueCommon.install = (Vue) => {
     vue.prototype.$common = {
         wrapperMinHeight() {
             const content = document.querySelector('.wrapper');
-            const height = window.outerHeight - (window.outerHeight * 0.2);
+            const height = window.outerHeight - (window.outerHeight * 0.1);
             content.style.minHeight = height + 'px';
         },
     };
