@@ -24,6 +24,16 @@ export default {
     }
   },
   methods: {
+    heightResize() {
+      const aboutImage = document.querySelectorAll('.about-image');
+      for (let i = 0; i < aboutImage.length; i += 1) {
+        aboutImage[i].style.height = (window.outerHeight-110) + 'px';
+      }
+    },
   },
+  mounted () {
+    window.addEventListener('load', this.heightResize);
+    window.addEventListener('resize', this.heightResize);
+  }
 }
 </script>
