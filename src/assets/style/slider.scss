@@ -204,3 +204,9 @@
 		letter-spacing: -1px;
 	}
 }
+
+@media screen and (max-device-height: 799px) {
+	.main-image {
+		height: 15rem;
+	}
+}
