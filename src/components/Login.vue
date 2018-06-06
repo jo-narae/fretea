@@ -1,7 +1,7 @@
 <template>
   <div class="content main-content mt50">
     <div class="login-content content-top">
-      <span class="login-title">LOGIN</span>
+      <div class="login-title">LOGIN</div>
       <input type="text" placeholder="아이디" />
       <input type="text" placeholder="비밀번호" />
       <button class="btn-login">LOGIN</button>
