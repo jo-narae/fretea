@@ -1,6 +1,41 @@
 input {
     box-sizing:border-box;
     -moz-box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #afafaf;
+}
+
+::-webkit-input-placeholder { /* 크롬 4–56 */
+    color: #afafaf;
+    font-size: 0.7rem;
+}
+:-moz-placeholder { /* 파이어폭스 4–18 */
+   color: #afafaf;
+   opacity:  1;
+   font-size: 0.7rem;
+}
+::-moz-placeholder { /* 파이어폭스 19–50 */
+   color: #afafaf;
+   opacity:  1;
+   font-size: 0.7rem;
+}
+:-ms-input-placeholder { /* 인터넷 익스플로러 10+ */
+   color:  #afafaf;
+   font-size: 0.7rem;
+}
+::placeholder { /* 파이어폭스 51+, 크롬 57+ */
+   color: #afafaf;
+   opacity:  1;
+   font-size: 0.7rem;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #afafaf;
 }
 
 input, textarea, select, button {
