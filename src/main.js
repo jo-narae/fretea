@@ -3,9 +3,13 @@ import VueAwesome from 'vue-awesome'
 import App from './App'
 import router from './router'
 
+import sess from '@/library/session';
+
 import './assets/style/common.scss'
 
 Vue.component('icon', VueAwesome)
+
+sess.setRouterSession(router);
 
 Vue.config.productionTip = false
 
