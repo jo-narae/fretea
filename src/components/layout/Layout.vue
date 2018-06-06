@@ -17,12 +17,12 @@ export default {
     FooterLayer,
   },
   props: {
-    pageName: {
-      type: String,
+    navActive: {
+      type: Boolean,
     },
   },
   watch: {
-    pageName(to) {
+    navActive(to) {
       this.handleScroll(to);
     }
   },
@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     handleScroll () {
-      if(this.pageName === 'main' || this.pageName === 'shop') {
+      if(!this.navActive) {
         this.scrolled = window.scrollY > 100;
       } else {
         this.scrolled = true;

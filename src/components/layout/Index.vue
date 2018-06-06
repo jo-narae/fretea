@@ -1,7 +1,7 @@
 <template>
   <div>
     <layout
-    :pageName="pageName"
+    :navActive="navActive"
     ></layout>
   </div>
 </template>
@@ -16,16 +16,16 @@ export default {
   },
   watch: {
     '$route' (to) {
-      this.pageName = to.meta.pageName;
+      this.navActive = to.meta.navActive;
     },
   },
   data () {
     return {
-      pageName: 'main',
+      navActive: 'main',
     };
   },
   created () {
-    this.pageName = this.$route.meta.pageName;
+    this.navActive = this.$route.meta.navActive;
   },
 }
 </script>

@@ -19,17 +19,17 @@ export default new Router({
       	{
         	path: '/',
           component: Main,
-          meta: { pageName: 'main'},
+          meta: { navActive: false, pageName: 'main'},
         },
         {
         	path: 'login',
           component: Login,
-          meta: { pageName: 'login'},
+          meta: { navActive: true, pageName: 'login'},
         },
         {
         	path: 'shop',
           component: Shop,
-          meta: { pageName: 'shop'},
+          meta: { navActive: false, pageName: 'shop'},
         }
       ]
     }
