@@ -10,7 +10,7 @@
       <ul>
         <li><a @click="movePage('shop')">SHOP</a></li>
         <li><a>정기구독</a></li>
-        <li><a>로그인</a></li>
+        <li><a @click="movePage('login')">로그인</a></li>
         <li><a>고객센터</a></li>
       </ul>
     </div>
@@ -35,6 +35,8 @@ export default {
         this.$router.push({path: '/'});
       } else if (page === 'shop') {
         this.$router.push({path: '/shop'});
+      } else if (page === 'login') {
+        this.$router.push({path: '/login'});
       }
     },
   }

@@ -154,6 +154,9 @@
 	background: $color_white !important;
 }
 @media (max-width: 486px) {
+	.image-description {
+		left: 50%;
+	}
 	.main-image {
 		height: 15rem;
 		background-position: 40% 50%;
