@@ -166,3 +166,283 @@ body {
 		margin-bottom: 50px;
 	}
 }
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width : 321px) {
+	div[role="about"] {
+		.about-image {
+			height: 40rem;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+/**********
+iPad 3
+**********/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+/* Desktops and laptops ----------- */
+@media only screen  and (min-width : 1224px) {
+	div[role="about"] {
+		.about-image {
+			height: 50rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* Large screens ----------- */
+@media only screen  and (min-width : 1824px) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	div[role="about"] {
+		.about-image {
+			height: 52rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* iPhone 5 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* iPhone 6 ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* iPhone 6+ ----------- */
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* Samsung Galaxy S3 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* Samsung Galaxy S4 ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}
+
+/* Samsung Galaxy S5 ----------- */
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+	div[role="about"] {
+		.about-image {
+			height: 30rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 15% !important;
+	}
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+	div[role="about"] {
+		.about-image {
+			height: 45rem !important;
+		}
+	}
+	.content-top {
+		margin-top: 20% !important;
+	}
+}

@@ -5,8 +5,6 @@
 	margin-top: 10%;
 }
 
-@media (max-width: 486px) {
-	.login-content {
-		margin-top: 25%;
-	}
+.login-title {
+	@extend .bolder;
 }
