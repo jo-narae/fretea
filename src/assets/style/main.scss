@@ -2,7 +2,7 @@ div[role="about"] {
 	.about-image {
 		visibility: visible;
 		width: 100%;
-		height: 58.1rem;
+		height: 55rem;
 		background-color: $color_opacity_brown;
     	background-blend-mode: darken;
 		background-size: cover;
@@ -73,9 +73,6 @@ div[role="process"] {
 
 @media (max-width: 486px) {
 	div[role="about"] {
-		.about-image {
-			height: 42rem !important;
-		}
 		.about-image-right {
 			background-position: 58% 50%;
 		}
@@ -113,6 +110,14 @@ div[role="process"] {
 				width: 6.2rem;
 				border-radius: 100%;
 			}
+		}
+	}
+}
+
+@media screen and (max-device-height: 799px) {
+	div[role="about"] {
+		.about-image {
+			height: 24rem !important;
 		}
 	}
 }
