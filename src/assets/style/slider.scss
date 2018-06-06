@@ -153,11 +153,6 @@
 .button-dot-active {
 	background: $color_white !important;
 }
-@media (max-width: 1080px) {
-	.image-description {
-		left: 55%;
-	}
-}
 @media (max-width: 486px) {
 	.main-image {
 		height: 15rem;
