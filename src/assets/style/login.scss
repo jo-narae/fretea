@@ -1,10 +1,52 @@
 .login-content {
-	position: relative;
-	width:70%;
-	margin-left:15%;
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
 	margin-top: 10%;
+	min-height: 600px;
+
+	ul {
+		list-style-type: none;
+		padding: 0;
+		li {
+			display: inline-block;
+			&:after {
+				padding-left: 5px;
+				content: "|";
+			}
+			&:last-child {
+				&:after {
+					content: "";
+				}
+			}
+		}
+	}
 }
 
 .login-title {
 	@extend .bolder;
+	font-size: 2rem;
+    letter-spacing: 5px;
+}
+
+.sns-logo {
+	width: 40px;
+	border-right: 1px solid $color_white;
+	margin-right: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn-login {
+	height: 40px;
+	background-color: $color_black;
+	border: 0px;
+	color: $color_white;
+}
+
+@media (max-width: 486px) {
+	.login-content {
+		width: 60%;
+		margin-left: 20%;
+	}
 }
