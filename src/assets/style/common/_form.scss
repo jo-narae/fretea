@@ -5,12 +5,14 @@ input {
     -moz-appearance: none;
     -webkit-border-radius: 0;
     appearance: none;
-    border: 1px solid #afafaf;
+    background-color: #f5f5f5;
+    border: 1px solid #f5f5f5;
     @extend .medium;
     font-size: 1rem;
     color: $font_base_color;
 }
 
+// placeholder start
 ::-webkit-input-placeholder { /* 크롬 4–56 */
     color: #afafaf;
 }
@@ -29,6 +31,7 @@ input {
    color: #afafaf;
    opacity:  1;
 }
+// placeholder end
 
 select {
     -webkit-appearance: none;
@@ -40,7 +43,7 @@ select {
 input, textarea, select, button {
     width: 100%;
     padding: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 button {

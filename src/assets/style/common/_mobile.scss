@@ -23,14 +23,22 @@
 }
 
 /* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 320px) {
+@media only screen and (max-width : 799px) {
+	.login-content {
+		width: 90% !important;
+		margin-left: 5% !important;
+	}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 1224px) {
 	div[role="about"] {
 		.about-image {
 			height: 30rem;
 		}
 	}
 	.content-top {
-		margin-top: 20% !important;
+		margin-top: 10% !important;
 	}
 }
 
