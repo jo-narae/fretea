@@ -1,6 +1,6 @@
 # Fretea
 
-> Fretea mini project
+> Fretea mini project!
 
 ## Build Setup
 
