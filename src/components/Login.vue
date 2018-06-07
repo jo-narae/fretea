@@ -1,5 +1,5 @@
 <template>
-  <div class="content main-content mt50">
+  <div class="content main-content">
     <div class="login-content content-top">
       <div class="login-title">LOGIN</div>
       <input type="text" placeholder="아이디" />

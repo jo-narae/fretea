@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/layout/Index'
 import Layout from '@/components/layout/Layout'
 import Main from '@/components/Main'
 import Login from '@/components/Login'
@@ -13,8 +12,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Index',
-      component: Index,
+      name: 'Layout',
+      component: Layout,
       children: [
       	{
         	path: '/',

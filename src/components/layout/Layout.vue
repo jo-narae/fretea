@@ -18,19 +18,16 @@ export default {
     NavigationLayer,
     FooterLayer,
   },
-  props: {
-    navActive: {
-      type: Boolean,
-    },
-  },
   watch: {
-    navActive(to) {
-      this.handleScroll(to);
-    }
+    '$route' (to) {
+      this.navActive = to.meta.navActive;
+      this.handleScroll();
+    },
   },
   data () {
     return {
-      scrolled: false
+      scrolled: false,
+      navActive: 'main',
     };
   },
   methods: {
@@ -45,6 +42,9 @@ export default {
   created () {
     this.handleScroll();
     window.addEventListener('scroll', this.handleScroll);
+    const meta = this.$route.meta.navActive;
+    this.navActive = meta;
+    this.scrolled = meta;
   },
 }
 </script>

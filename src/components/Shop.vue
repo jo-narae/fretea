@@ -1,11 +1,13 @@
 <template>
   <div class="content main-content">
-    <image-slider
-      :imagePath="sliderImagePath"
-      :prevNext="false"
-      :description="description">
-    </image-slider>
-    준비중
+    <div>
+      <image-slider
+        :imagePath="sliderImagePath"
+        :prevNext="false"
+        :description="description">
+      </image-slider>
+      준비중
+    </div>
   </div>
 </template>
 
