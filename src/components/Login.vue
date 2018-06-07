@@ -6,9 +6,9 @@
       <input type="text" placeholder="비밀번호" />
       <button class="btn-login">LOGIN</button>
       <ul>
+        <li>회원가입</li>
         <li>아이디 찾기</li>
         <li>비밀번호 찾기</li>
-        <li>회원가입</li>
       </ul>
       <button class="btn-sns-login btn-facebook">
         <img class="sns-logo" src="/static/img/logo_facebook.png" />페이스북으로 로그인

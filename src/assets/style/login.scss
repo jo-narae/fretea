@@ -8,18 +8,19 @@
 	ul {
 		list-style-type: none;
 		padding: 0;
-		margin-bottom: 20px;
+		width: 100%;
 		li {
+			font-size: 14px;
+			-webkit-box-flex: 1;
+			-ms-flex: 1;
+			flex: 1;
+			float: left;
+			width: 33%;
+			margin-bottom: 25px;
 			display: inline-block;
-			font-size: 0.9rem;
-			&:after {
-				padding-left: 5px;
-				content: "|";
-			}
+			border-right: 1px solid $color_light_gray;
 			&:last-child {
-				&:after {
-					content: "";
-				}
+				border-right: 0;
 			}
 		}
 	}
@@ -27,7 +28,7 @@
 
 .login-title {
 	@extend .bolder;
-	font-size: 2rem;
+	font-size: 30px;
 	letter-spacing: 5px;
 	margin-bottom: 2rem;
 }
@@ -46,7 +47,8 @@
 	border: 0px;
 	color: $color_white;
 	@extend .bolder;
-	font-size: 1rem;
+	letter-spacing: 1px;
+    font-size: 18px;
 }
 
 .btn-sns-login {
@@ -56,24 +58,25 @@
 	border: 0px !important;
 	color: #fff !important;
 	margin-bottom: 5px !important;
+	font-size: 14px;
 	@extend .medium;
 }
 
 .btn-facebook {
-	background-color:#405896 !important;
+	background-color: $color_logo_facebook !important;
 }
 
 .btn-google {
-	background-color:#dd4c40 !important;
+	background-color: $color_logo_google !important;
 }
 
 .btn-naver {
-	background-color:#1dc800 !important;
+	background-color: $color_logo_naver !important;
 }
 
 .btn-kakao {
 	@extend .bold;
-	background-color:#f8d100 !important;
+	background-color: $color_logo_kakao !important;
 	color: #000 !important;
 }
 
