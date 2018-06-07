@@ -9,8 +9,8 @@
 </template>
 
 <script>
-import NavigationLayer from '@/components/layout/NavigationLayer.vue'
-import FooterLayer from '@/components/layout/FooterLayer.vue'
+import NavigationLayer from '@/components/layout/NavigationLayer'
+import FooterLayer from '@/components/layout/FooterLayer'
 
 export default {
   name: 'layout',

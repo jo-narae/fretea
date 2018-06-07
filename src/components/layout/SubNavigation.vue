@@ -8,18 +8,21 @@
         </svg>
       </div>
       <ul>
-        <li><a @click="movePage('shop')">SHOP</a></li>
-        <li><a>정기구독</a></li>
-        <li><a @click="movePage('login')">로그인</a></li>
-        <li><a>고객센터</a></li>
+        <li @click="movePath('shop')">SHOP</li>
+        <li>정기구독</li>
+        <li @click="movePath('login')">로그인</li>
+        <li>고객센터</li>
       </ul>
     </div>
   </div>
 </template>
 
 <script>
+import Common from '@/components/common/Common'
+
 export default {
   name: 'sub-navigation',
+  mixins: [ Common ],
   methods: {
     slide() {
       if(document.querySelector('.sub-menu').offsetWidth === 0) {
@@ -28,15 +31,6 @@ export default {
       } else {
         document.querySelector('.sub-menu').style.width = "0px";
         document.querySelector('.menu-area').classList.remove('menu-area-active');
-      }
-    },
-    movePage(page) {
-      if (page === 'home') {
-        this.$router.push({path: '/'});
-      } else if (page === 'shop') {
-        this.$router.push({path: '/shop'});
-      } else if (page === 'login') {
-        this.$router.push({path: '/login'});
       }
     },
   }

@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import ImageSlider from '@/components/common/ImageSlider.vue'
+import ImageSlider from '@/components/common/ImageSlider'
 
 export default {
   components: {

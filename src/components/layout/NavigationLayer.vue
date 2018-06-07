@@ -1,12 +1,12 @@
 <template>
   <div class="nav" :class="[ scrolled ? 'nav-color' : '']">
     <div class="logo">
-      <div @click="movePage('home')">FRETEA</div>
+      <div @click="movePath('/')">FRETEA</div>
     </div>
     <ul class="web-menu">
-      <li><a @click="movePage('shop')">SHOP</a></li>
+      <li @click="movePath('shop')">SHOP</li>
       <li>정기구독</li>
-      <li><a @click="movePage('login')">로그인</a></li>
+      <li @click="movePath('login')">로그인</li>
       <li>고객센터</li>
     </ul>
     <div class="more">
@@ -21,10 +21,12 @@
 </template>
 
 <script>
-import SubNavigation from '@/components/layout/SubNavigation.vue'
+import SubNavigation from '@/components/layout/SubNavigation'
+import Common from '@/components/common/Common'
 
 export default {
   name: 'navigation-layer',
+  mixins: [ Common ],
   components: {
     SubNavigation,
   },
@@ -35,16 +37,6 @@ export default {
     subMenuOpen() {
       this.$refs.subNav.slide();
     },
-    movePage(page) {
-      if (page === 'home') {
-        this.$router.push({path: '/'});
-      } else if (page === 'login') {
-        this.$router.push({path: '/login'});
-      } else if (page === 'shop') {
-        this.$router.push({path: '/shop'});
-      }
-      
-    }
   },
 }
 </script>

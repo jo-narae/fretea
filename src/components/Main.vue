@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import MainAbout from '@/components/main/About.vue'
+import MainAbout from '@/components/main/About'
 
 export default {
   components: {
