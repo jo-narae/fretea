@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrap">
     <layout :navActive="navActive"></layout>
   </div>
 </template>

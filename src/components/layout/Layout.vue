@@ -1,7 +1,7 @@
 <template>
   <div>
     <navigation-layer :scrolled="scrolled"></navigation-layer>
-    <div class="wrapper">
+    <div class="content-wrap">
       <router-view></router-view>
     </div>
     <footer-layer></footer-layer>

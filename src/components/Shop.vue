@@ -6,8 +6,6 @@
       :description="description">
     </image-slider>
     준비중
-    <!-- 임시영역 -->
-    <div style="height: 300px;"></div>
   </div>
 </template>
 
