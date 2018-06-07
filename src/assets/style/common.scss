@@ -16,6 +16,10 @@ body {
 	font-size: 15px;
 }
 
+ul {
+	cursor: pointer;
+}
+
 .thin {
 	font-family: $font_notokr_thin, $font_family !important;
 }
