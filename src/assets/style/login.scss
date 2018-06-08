@@ -50,7 +50,7 @@
     font-size: 18px;
 }
 
-.btn-sns-login2 {
+.btn-sns-login {
 	padding-left:0px !important;
 	text-align: left !important;
 	width:100% !important;
@@ -58,8 +58,11 @@
 	border: 0px !important;
 	color: $color_white !important;
 	margin-bottom: 5px !important;
+}
+
+.btn-font {
+	@extend .bold;
 	font-size: 14px !important;
-	@extend .medium;
 }
 
 .btn-facebook {
