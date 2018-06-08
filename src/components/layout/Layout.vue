@@ -37,6 +37,13 @@ export default {
       } else {
         this.scrolled = true;
       }
+    },
+    footerAdjust() {
+      if (this.$route.meta.pageName !== 'main') {
+        document.querySelector('.footer').classList.add('mt50');
+      } else {
+        document.querySelector('.footer').classList.remove('mt50');
+      }
     }
   },
   created () {
@@ -46,5 +53,11 @@ export default {
     this.navActive = meta;
     this.scrolled = meta;
   },
+  mounted() {
+    this.footerAdjust();
+  },
+  updated() {
+    this.footerAdjust();
+  }
 }
 </script>
