@@ -12,6 +12,7 @@ html, body {
 }
 
 body {
+	-webkit-text-size-adjust: none;
 	font-family: $font_family;
 	font-size: 15px;
 }
