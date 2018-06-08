@@ -19,7 +19,7 @@
       <button class="btn-sns-login btn-font btn-naver">
         <img class="sns-logo" src="/static/img/logo_naver.png" />네이버로 로그인
       </button>
-      <button class="btn-sns-login btn-font btn-kakao">
+      <button class="btn-sns-login btn-kakao">
         <img class="sns-logo" src="/static/img/logo_kakao.png" />카카오로 로그인
       </button>
     </div>

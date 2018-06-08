@@ -61,7 +61,7 @@
 }
 
 .btn-font {
-	@extend .bold;
+	@extend .medium;
 	font-size: 12px !important;
 }
 
@@ -78,7 +78,8 @@
 }
 
 .btn-kakao {
-	@extend .bold;
+	font-family: $font_notokr_bold !important;
+	font-size: 12px !important;
 	background-color: $color_logo_kakao !important;
 	color: $color_black !important;
 }
