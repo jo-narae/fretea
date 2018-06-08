@@ -56,28 +56,31 @@
 	width:100% !important;
 	height: inherit !important;
 	border: 0px !important;
-	color: #fff !important;
+	color: $color_white !important;
 	margin-bottom: 5px !important;
-	font-size: 14px !important;
 	@extend .medium;
 }
 
 .btn-facebook {
 	background-color: $color_logo_facebook !important;
+	font-size: 14px !important;
 }
 
 .btn-google {
 	background-color: $color_logo_google !important;
+	font-size: 14px !important;
 }
 
 .btn-naver {
 	background-color: $color_logo_naver !important;
+	font-size: 14px !important;
 }
 
 .btn-kakao {
 	@extend .bold;
 	background-color: $color_logo_kakao !important;
-	color: #000 !important;
+	font-size: 14px !important;
+	color: $color_black !important;
 }
 
 @media (max-width: 486px) {
