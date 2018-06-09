@@ -1,6 +1,6 @@
 <template>
   <div class="content main-content">
-    <div class="login-content content-top">
+    <div class="sub-content content-top">
       <div class="login-title">회원가입</div>
     </div>
   </div>

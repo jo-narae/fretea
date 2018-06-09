@@ -1,6 +1,6 @@
 <template>
   <div class="content main-content">
-    <div class="login-content content-top">
+    <div class="sub-content content-top">
       <div class="login-title">LOGIN</div>
       <input type="text" placeholder="아이디" />
       <input type="text" placeholder="비밀번호" />
