@@ -2,6 +2,7 @@
   <div class="wrap-modal" @click="closeModal">
     <div class="modal-area">
       <div class="modal-content">
+        <join-modal></join-modal>
         {{modalMsg}}
       </div>
     </div>
@@ -9,11 +10,17 @@
 </template>
 
 <script>
+import JoinModal from '@/components/common/modal/Join'
 
 export default {
+  name: 'custom-modal',
+  components: {
+    JoinModal,
+  },
   props: {
     modalMsg: {
       type: String,
+      default: '',
     },
   },
   methods: {
@@ -25,7 +32,7 @@ export default {
     }
   },
   mounted() {
-    document.querySelector(".wrap-modal").style.display = "none";
+    document.querySelector(".wrap-modal").style.display = "block";
   }
 }
 </script>

@@ -3,7 +3,7 @@
     <div class="sub-content content-top">
       <div class="login-title">LOGIN</div>
       <input type="text" placeholder="아이디" />
-      <input type="text" placeholder="비밀번호" />
+      <input type="password" placeholder="비밀번호" />
       <button class="btn-login">LOGIN</button>
       <ul>
         <li @click="openModal">회원가입</li>
@@ -24,8 +24,7 @@
       </button>
     </div>
     <custom-modal
-      ref="login"
-      :modalMsg="modalMsg">
+      ref="login">
     </custom-modal>
   </div>
 </template>
@@ -38,18 +37,6 @@ export default {
   mixins: [ Common ],
   components: {
     CustomModal,
-  },
-  data() {
-    return {
-      modalMsg: `testtesttesttesttesttest
-      testtesttesttesttesttest
-      testtesttesttesttesttesttesttest
-      testtesttesttest
-      testtesttesttest
-      testtesttesttest
-      testtesttesttest
-      testtesttesttest`,
-    };
   },
   methods: {
     openModal() {
