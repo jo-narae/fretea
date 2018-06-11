@@ -1,5 +1,5 @@
 <template>
-  <div class="content main-content">
+  <div class="content">
     <main-about 
       :imagePath="mainImagePath">
     </main-about>

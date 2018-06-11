@@ -1,5 +1,5 @@
 <template>
-  <div class="content main-content">
+  <div class="content">
     <div>
       <image-slider
         :imagePath="sliderImagePath"
