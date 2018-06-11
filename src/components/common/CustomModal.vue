@@ -27,12 +27,14 @@ export default {
     openModal() {
       document.querySelector(".wrap-modal").style.display = "block";
     },
-    closeModal() {
-      document.querySelector(".wrap-modal").style.display = "none";
+    closeModal(e) {
+      if (e.target.className === "wrap-modal") {
+        document.querySelector(".wrap-modal").style.display = "none";
+      }
     }
   },
   mounted() {
-    document.querySelector(".wrap-modal").style.display = "block";
+    document.querySelector(".wrap-modal").style.display = "none";
   }
 }
 </script>
