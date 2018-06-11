@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="content main-content">
     <div class="sub-content content-top">
       <div class="login-title">LOGIN</div>
       <input type="text" placeholder="아이디" />
