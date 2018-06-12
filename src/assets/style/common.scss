@@ -8,10 +8,8 @@
 @import "./login";
 
 html, body {
-	-webkit-overflow-scrolling : touch !important;
-    overflow: auto !important;
-    height: 100% !important;
-	margin: 0 !important;
+	height: 100%;
+	margin: 0;
 }
 
 body {
