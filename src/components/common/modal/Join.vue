@@ -17,3 +17,8 @@ export default {
 }
 </script>
 
+<style scoped>
+  input {
+    position: fixed;
+  }
+</style>
