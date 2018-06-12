@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Layout from '@/components/layout/Layout'
 import Main from '@/components/Main'
 import Login from '@/components/Login'
+import Join from '@/components/Join'
 import Shop from '@/components/Shop'
 
 Vue.use(Router)
@@ -23,6 +24,11 @@ export default new Router({
         {
         	path: 'login',
           component: Login,
+          meta: { navActive: true, pageName: 'login'},
+        },
+        {
+        	path: 'join',
+          component: Join,
           meta: { navActive: true, pageName: 'login'},
         },
         {

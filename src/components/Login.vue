@@ -1,12 +1,12 @@
 <template>
   <div class="content main-content">
     <div class="sub-content content-top">
-      <div class="login-title">LOGIN</div>
+      <div class="login-title">로그인</div>
       <input type="text" placeholder="아이디" />
       <input type="password" placeholder="비밀번호" />
       <button class="btn-login">LOGIN</button>
       <ul>
-        <li @click="openModal">회원가입</li>
+        <li @click="movePath('join')">회원가입</li>
         <li>아이디 찾기</li>
         <li>비밀번호 찾기</li>
       </ul>
@@ -23,26 +23,14 @@
         <img class="sns-logo" src="/static/img/logo_kakao.png" />카카오로 로그인
       </button>
     </div>
-    <custom-modal
-      ref="login">
-    </custom-modal>
   </div>
 </template>
 
 <script>
 import Common from '@/components/common/Common'
-import CustomModal from '@/components/common/CustomModal'
 
 export default {
   mixins: [ Common ],
-  components: {
-    CustomModal,
-  },
-  methods: {
-    openModal() {
-      this.$refs.login.openModal();
-    }
-  }
 }
 </script>
 
