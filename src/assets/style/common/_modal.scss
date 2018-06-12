@@ -8,6 +8,10 @@
     right: 0;
     z-index: 999999;
     background-color: rgba(0, 0, 0, 0.5);
+  
+    input {
+        position: fixed;
+    }
 }
 .modal-area {
     position: relative;
