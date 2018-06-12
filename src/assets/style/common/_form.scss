@@ -10,6 +10,7 @@ input {
     @extend .medium;
     font-size: 14px;
     color: $font_base_color;
+    position: device-fixed;
 }
 
 // placeholder start

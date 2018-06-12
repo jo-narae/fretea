@@ -18,7 +18,7 @@
     left: 50%;
     max-width: 50%;
     box-sizing: border-box;
-    transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%);
 
 }
 .modal-content {
@@ -53,18 +53,6 @@
     letter-spacing: 5px;
     margin-bottom: 1rem;
     text-align: left;
-}
-
-.modal-input {
-    position: relative;
-    width: 100%;
-    height: 45px;
-    margin: 0 20px 0 20px;
-    input {
-        position: fixed;
-        width: inherit;
-        transform: translate(-50%, -50%);
-    }
 }
 
 .btn-modal {
