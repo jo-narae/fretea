@@ -5,11 +5,67 @@ input {
     -moz-appearance: none;
     -webkit-border-radius: 0;
     appearance: none;
-    background-color: #f5f5f5;
-    border: 1px solid #f5f5f5;
+    background-color: $color_background_gray;
+    border: 1px solid $color_background_gray;
     @extend .medium;
     font-size: 14px;
     color: $font_base_color;
+}
+
+.checkbox-group {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    height: 24px;
+    cursor: pointer;
+    input {
+        position: absolute;
+        opacity: 0;
+        width: 0;
+        height: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    .checkbox {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background-color: $color_white;
+        border: solid 2px $color_warm_gray;
+        svg {
+            width: 14px;
+            height: 24px;
+            color: $color_disable_gray;
+        }
+    }
+    .active {
+        @extend .checkbox;
+        border: solid 2px $font_base_color;
+        svg {
+            color: $font_base_color;
+        }
+    }
+    .checkbox-label {
+        text-align: left;
+    }
+}
+
+.checkmark {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
 }
 
 // placeholder start
