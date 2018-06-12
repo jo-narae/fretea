@@ -12,20 +12,20 @@
           <icon name="check"></icon>
         </span>
         <span @click="agreeCheck('TOS')">이용약관 (필수)</span>
-        <span class="detail-view">내용보기</span>
+        <span class="detail-view" @click="openModal('TOS')">내용보기</span>
       </div>
       <div class="checkbox-group">
         <span class="checkbox"
-        :class="[ priviteCheck ? 'active' : '']"
-        @click="agreeCheck('privite')">
+        :class="[ privateCheck ? 'active' : '']"
+        @click="agreeCheck('private')">
           <icon name="check"></icon>
         </span>
-        <span @click="agreeCheck('privite')">개인정보 수집 및 이용 (필수)</span>
-        <span class="detail-view">내용보기</span>
+        <span @click="agreeCheck('private')">개인정보 수집 및 이용 (필수)</span>
+        <span class="detail-view" @click="openModal('private')">내용보기</span>
       </div>
       <button class="btn-modal">JOIN</button>
       <custom-modal
-        ref="login">
+        ref="join">
       </custom-modal>
     </div>
   </div>
@@ -42,18 +42,22 @@ export default {
   data() {
     return {
       TOSCheck: false,
-      priviteCheck: false,
+      privateCheck: false,
     };
   },
   methods: {
-    openModal() {
-      this.$refs.login.openModal();
+    openModal(type) {
+      if (type === 'TOS') {
+        this.$refs.join.openModal('TOS');
+      } else {
+        this.$refs.join.openModal('private');
+      }
     },
     agreeCheck(type) {
       if (type === 'TOS') {
         this.TOSCheck = !this.TOSCheck;
       } else {
-        this.priviteCheck = !this.priviteCheck;
+        this.privateCheck = !this.privateCheck;
       }
     }
   },
