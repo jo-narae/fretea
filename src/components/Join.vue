@@ -11,7 +11,8 @@
         @click="agreeCheck('TOS')">
           <icon name="check"></icon>
         </span>
-        <div class="checkbox-label">이용약관 (필수)</div>
+        <span @click="agreeCheck('TOS')">이용약관 (필수)</span>
+        <span class="detail-view">내용보기</span>
       </div>
       <div class="checkbox-group">
         <span class="checkbox"
@@ -19,7 +20,8 @@
         @click="agreeCheck('privite')">
           <icon name="check"></icon>
         </span>
-        <div class="checkbox-label">개인정보 수집 및 이용 (필수)</div>
+        <span @click="agreeCheck('privite')">개인정보 수집 및 이용 (필수)</span>
+        <span class="detail-view">내용보기</span>
       </div>
       <button class="btn-modal">JOIN</button>
       <custom-modal

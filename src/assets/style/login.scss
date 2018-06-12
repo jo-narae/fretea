@@ -1,6 +1,6 @@
 .login-title {
 	@extend .bold;
-	font-size: 30px;
+	font-size: 26px;
 	letter-spacing: 5px;
 	margin-bottom: 2rem;
 }
@@ -39,18 +39,22 @@
 }
 
 .btn-facebook {
+	@extend .btn-sns-login;
 	background-color: $color_logo_facebook !important;
 }
 
 .btn-google {
+	@extend .btn-sns-login;
 	background-color: $color_logo_google !important;
 }
 
 .btn-naver {
+	@extend .btn-sns-login;
 	background-color: $color_logo_naver !important;
 }
 
 .btn-kakao {
+	@extend .btn-sns-login;
 	font-family: $font_notokr_bold !important;
 	font-size: 12px !important;
 	background-color: $color_logo_kakao !important;

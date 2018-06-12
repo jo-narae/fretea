@@ -18,7 +18,7 @@ input {
     padding-left: 35px;
     margin-bottom: 12px;
     height: 24px;
-    cursor: pointer;
+    text-align: left;
     input {
         position: absolute;
         opacity: 0;
@@ -33,13 +33,18 @@ input {
         left: 0;
         height: 22px;
         width: 22px;
+        text-align: center;
         background-color: $color_white;
         border: solid 2px $color_warm_gray;
+        cursor: pointer;
         svg {
             width: 14px;
             height: 24px;
             color: $color_disable_gray;
         }
+    }
+    span {
+        cursor: pointer;
     }
     .active {
         @extend .checkbox;
@@ -48,8 +53,12 @@ input {
             color: $font_base_color;
         }
     }
-    .checkbox-label {
-        text-align: left;
+    .detail-view {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #969696;
+        text-decoration: underline;
     }
 }
 
