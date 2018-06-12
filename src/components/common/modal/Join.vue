@@ -16,12 +16,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-  .modal-input {
-    position: relative;
-  }
-  input {
-    position: absoulte;
-  }
-</style>
