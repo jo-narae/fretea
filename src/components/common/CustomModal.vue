@@ -2,6 +2,7 @@
   <div class="wrap-modal" @click="closeModal">
     <div class="modal-area">
       <div class="modal-content">
+        <div class="modal-top"></div>
         <join-modal></join-modal>
         {{modalMsg}}
       </div>
