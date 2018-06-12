@@ -13,6 +13,9 @@
 export default {
   name: 'join-modal',
   methods: {
+    deviceClickFocus(name) {
+      document.querySelector(`input[name='${name}']`).focus();
+    }
   },
 }
 </script>
