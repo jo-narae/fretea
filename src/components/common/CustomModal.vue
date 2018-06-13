@@ -1,10 +1,7 @@
 <template>
   <div class="wrap-modal" @click="closeModal">
     <div class="modal-area">
-      <div style="position: fixed;
-    background-color: #fff;
-    width: 100%;
-    height: 50px;">
+      <div class="fix-modal-title">
         <div class="modal-title">{{modalTitle}}</div>
         <div class="modal-close" @click="closeButton">
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -21,15 +18,14 @@
       <div v-if="modalMsg !== ''" class="modal-content">
         {{modalMsg}}
       </div>
-      <div v-if="joinView !== ''" class="modal-scroll">
-        <span v-html="joinView"></span>
-      </div>
+      <div v-if="joinView !== ''" class="modal-scroll" v-html="joinView"></div>
     </div>
   </div>
 </template>
 
 <script>
 import agreeTOS from '@/library/agreeTOS';
+import agreePrivate from '@/library/agreePrivate';
 
 export default {
   name: 'custom-modal',
@@ -52,7 +48,7 @@ export default {
         this.joinView = agreeTOS;
       } else if (type === 'private') {
         this.modalTitle = '개인정보 수집 및 이용';
-        this.joinView = agreeTOS;
+        this.joinView = agreePrivate;
       }
       document.querySelector(".wrap-modal").style.display = "block";
     },
