@@ -117,3 +117,25 @@ button {
 	border: 0px;
 	color: $color_black;
 }
+
+.btn-group {
+	position: relative;
+	height: 50px;
+	.btn-half {
+		@extend .btn-login;
+		width: calc(50% - 10px) !important;
+		height: 40px !important;
+		position: absolute;
+		margin-right: 10px;
+		line-height: 20px;
+	}
+	.btn-left {
+		left: 0;
+		background-color: $color_white;
+		color: $font_base_color;
+		border: 2px solid $font_base_color;
+	}
+	.btn-right {
+		right: 0;
+	}
+}

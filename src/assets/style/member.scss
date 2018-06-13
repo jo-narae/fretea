@@ -20,7 +20,8 @@
 	color: $color_white;
 	@extend .bolder;
 	letter-spacing: 1px;
-    font-size: 18px;
+	font-size: 18px;
+	cursor: pointer;
 }
 
 .btn-sns-login {
@@ -68,5 +69,18 @@
     color: #f40103;
 }
 
+.msg-wellcome {
+	white-space: pre-wrap;
+    word-break: break-all;
+    width: 100%;
+	background: $color_background_gray;
+	padding: 20px;
+}
+
 @media (max-width: 486px) {
+	.msg-wellcome {
+		width: calc(100% - 20px);
+		padding: 10px;
+		text-align: left;
+	}
 }

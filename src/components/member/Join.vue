@@ -25,7 +25,7 @@
       <span @click="agreeCheck('private')">개인정보 수집 및 이용 (필수)</span>
       <span class="detail-view" @click="openModal('private')">내용보기</span>
     </div>
-    <button class="btn-modal" @click="movePath('joinComplete')">확인</button>
+    <button class="btn-login mt20" @click="movePath('joinComplete')">확인</button>
     <custom-modal
       ref="join">
     </custom-modal>
