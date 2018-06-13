@@ -47,6 +47,10 @@
         @extend .bold;
         font-size: 17px;
     }
+    .agree-title-sub {
+        @extend .bold;
+        font-size: 15px;
+    }
 }
 
 .sub-modal-content {
