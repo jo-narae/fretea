@@ -1,5 +1,5 @@
 .login-title {
-	@extend .bold;
+	@extend .bolder;
 	font-size: 26px;
 	letter-spacing: 5px;
 	margin-bottom: 2rem;
@@ -59,6 +59,13 @@
 	font-size: 12px !important;
 	background-color: $color_logo_kakao !important;
 	color: $color_black !important;
+}
+
+.msg-error {
+	@extend .bold;
+    font-size: 12px;
+    text-align: left;
+    color: #f40103;
 }
 
 @media (max-width: 486px) {

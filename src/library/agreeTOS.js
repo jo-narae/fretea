@@ -1,5 +1,4 @@
-export default `
-<span class="agree-title">제 1장 총 칙</span>
+export default `<span class="agree-title">제 1장 총 칙</span>
 
 <span class="agree-title-sub">제 1조 (목적)</span>
 이 약관은 프레티회사(이하 "회사") 가 운영하는 인터넷 사이트를 통하여 제공하는 전자상거래 관련 서비스(이하 "서비스")를 이용함에 있어 회사와 이용자의 권리·의무 및 책임사항을 규정함을 목적으로 합니다.

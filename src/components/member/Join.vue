@@ -3,8 +3,11 @@
     <div class="sub-content content-top">
       <div class="login-title">SIGN UP</div>
       <input type="text" name="email" placeholder="아이디" />
+      <div class="msg-error mb10" v-if="idCheckError !== ''">{{idCheckError}}</div>
       <input type="password" name="password" placeholder="비밀번호" />
+      <div class="msg-error mb10" v-if="pwdCheckError !== ''">{{pwdCheckError}}</div>
       <input type="password" name="rePassword" placeholder="비밀번호 확인" />
+      <div class="msg-error mb20" v-if="rePwdCheckError !== ''">{{rePwdCheckError}}</div>
       <div class="checkbox-group">
         <span class="checkbox"
         :class="[ TOSCheck ? 'active' : '']"
@@ -23,7 +26,7 @@
         <span @click="agreeCheck('private')">개인정보 수집 및 이용 (필수)</span>
         <span class="detail-view" @click="openModal('private')">내용보기</span>
       </div>
-      <button class="btn-modal">확인</button>
+      <button class="btn-modal" @click="movePath('joinComplete')">확인</button>
       <custom-modal
         ref="join">
       </custom-modal>
@@ -32,10 +35,11 @@
 </template>
 
 <script>
+import Common from '@/components/common/Common'
 import CustomModal from '@/components/common/CustomModal'
 
 export default {
-  name: 'join-modal',
+  mixins: [ Common ],
   components: {
     CustomModal,
   },
@@ -43,6 +47,9 @@ export default {
     return {
       TOSCheck: false,
       privateCheck: false,
+      idCheckError: '',
+      pwdCheckError: '',
+      rePwdCheckError: '',
     };
   },
   methods: {
