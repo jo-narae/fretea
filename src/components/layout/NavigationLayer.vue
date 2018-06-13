@@ -6,7 +6,7 @@
     <ul class="web-menu">
       <li @click="movePath('/shop')">SHOP</li>
       <li>정기구독</li>
-      <li @click="movePath('/login')">로그인</li>
+      <li @click="movePath('/member/login')">로그인</li>
       <li>고객센터</li>
     </ul>
     <div class="more">
