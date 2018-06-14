@@ -1,7 +1,7 @@
 <template>
   <div>
     <find-id></find-id>
-    <find-pwd></find-pwd>
+    <find-pwd class="mt50"></find-pwd>
   </div>
 </template>
 

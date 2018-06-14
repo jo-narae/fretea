@@ -77,6 +77,19 @@
 	padding: 20px;
 }
 
+.find-title {
+	@extend .login-title;
+	text-align: left;
+	margin-bottom: 0;
+}
+
+.find-description {
+	text-align: left;
+	border-bottom: 3px solid;
+	margin-top: 0.5em;
+	margin-bottom: 1.5em;
+}
+
 @media (max-width: 486px) {
 	.msg-wellcome {
 		width: calc(100% - 20px);
