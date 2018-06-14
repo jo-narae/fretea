@@ -6,8 +6,7 @@
     <button class="btn-login">LOGIN</button>
     <ul>
       <li @click="movePath('join')">회원가입</li>
-      <li>아이디 찾기</li>
-      <li>비밀번호 찾기</li>
+      <li @click="movePath('findIdPwd')">ID / 비밀번호 찾기</li>
     </ul>
     <button class="btn-font btn-facebook">
       <img class="sns-logo" src="/static/img/logo_facebook.png" />페이스북으로 로그인

@@ -7,6 +7,7 @@ import Member from '@/components/Member'
 import Login from '@/components/member/Login'
 import Join from '@/components/member/Join'
 import JoinComplete from '@/components/member/JoinComplete'
+import FindIdPwd from '@/components/member/FindIdPwd'
 
 Vue.use(Router)
 
@@ -45,7 +46,13 @@ export default new Router({
               path: 'joinComplete',
               name: 'JoinComplete',
               component: JoinComplete,
-              meta: { navActive: true, pageName: 'join'},
+              meta: { navActive: true, pageName: 'joinComplete'},
+            },
+            {
+              path: 'findIdPwd',
+              name: 'FindIdPwd',
+              component: FindIdPwd,
+              meta: { navActive: true, pageName: 'findIdPwd'},
             },
           ]
         },
