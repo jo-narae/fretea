@@ -82,11 +82,12 @@
 	text-align: left;
 	margin-bottom: 0;
 	letter-spacing: 0px;
-}
+	padding-top: 20px;
 
-.find-title:first-letter{
-	border-top: 3px solid;
-	padding-top: 10px;
+	&:first-letter{
+		border-top: 3px solid;
+		padding-top: 10px;
+	}
 }
 
 .find-description {
