@@ -12,6 +12,28 @@ input {
     color: $font_base_color;
 }
 
+.input-area {
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+    dt {
+        float: left;
+        text-align: left;
+        width: 20%;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    dd {
+        float: left;
+        margin: 0;
+        width: 80%;
+    }
+}
+.input-last-area {
+    @extend .input-area;
+    margin-bottom: 20px;
+}
+
 .checkbox-group {
     display: block;
     position: relative;
@@ -138,4 +160,15 @@ button {
 	.btn-right {
 		right: 0;
 	}
+}
+
+@media (max-width: 486px) {
+    .input-area {
+        dt {
+            width: 30%;
+        }
+        dd {
+            width: 70%;
+        }
+    }
 }

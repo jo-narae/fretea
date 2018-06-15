@@ -1,21 +1,41 @@
 <template>
   <div>
     <div class="login-title">SIGN UP</div>
-    <div class="input-login-area">
-      <div class="input-login-label">이름</div>
-      <div>
+    <dl class="input-area">
+      <dt>이름</dt>
+      <dd>
         <input type="text" name="username" placeholder="이름" />
         <div class="msg-error mb10" v-if="nameCheckError !== ''">{{nameCheckError}}</div>
-      </div>
-    </div>
-    <input type="text" name="email" placeholder="아이디" />
-    <div class="msg-error mb10" v-if="idCheckError !== ''">{{idCheckError}}</div>
-    <input type="password" name="password" placeholder="비밀번호" />
-    <div class="msg-error mb10" v-if="pwdCheckError !== ''">{{pwdCheckError}}</div>
-    <input type="password" name="rePassword" placeholder="비밀번호 확인" />
-    <div class="msg-error mb20" v-if="rePwdCheckError !== ''">{{rePwdCheckError}}</div>
-    <input type="text" name="phoneNumber" placeholder="휴대폰 번호" />
-    <div class="msg-error mb10" v-if="phoneCheckError !== ''">{{phoneCheckError}}</div>
+      </dd>
+    </dl>
+    <dl class="input-area">
+      <dt>아이디</dt>
+      <dd>
+        <input type="text" name="email" placeholder="아이디" />
+        <div class="msg-error mb10" v-if="idCheckError !== ''">{{idCheckError}}</div>
+      </dd>
+    </dl>
+    <dl class="input-area">
+      <dt>비밀번호</dt>
+      <dd>
+        <input type="password" name="password" placeholder="비밀번호" />
+        <div class="msg-error mb10" v-if="pwdCheckError !== ''">{{pwdCheckError}}</div>
+      </dd>
+    </dl>
+    <dl class="input-area">
+      <dt>비밀번호 확인</dt>
+      <dd>
+        <input type="password" name="rePassword" placeholder="비밀번호 확인" />
+        <div class="msg-error mb20" v-if="rePwdCheckError !== ''">{{rePwdCheckError}}</div>
+      </dd>
+    </dl>
+    <dl class="input-last-area">
+      <dt>휴대폰 번호</dt>
+      <dd>
+        <input type="text" name="phoneNumber" placeholder="휴대폰 번호" />
+        <div class="msg-error mb10" v-if="phoneCheckError !== ''">{{phoneCheckError}}</div>
+      </dd>
+    </dl>
     <div class="checkbox-group">
       <span class="checkbox"
       :class="[ TOSCheck ? 'active' : '']"
