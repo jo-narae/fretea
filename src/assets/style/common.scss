@@ -15,7 +15,7 @@ html, body {
 body {
 	-webkit-text-size-adjust: none;
 	font-family: $font_family;
-	font-size: 15px;
+	font-size: 14px;
 }
 
 ul {
@@ -76,7 +76,6 @@ ul {
 		padding: 0;
 		width: 100%;
 		li {
-			font-size: 14px;
 			-webkit-box-flex: 1;
 			-ms-flex: 1;
 			flex: 1;
