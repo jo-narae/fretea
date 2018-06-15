@@ -81,13 +81,22 @@
 	@extend .login-title;
 	text-align: left;
 	margin-bottom: 0;
+	letter-spacing: 0px;
+}
+
+.find-title:first-letter{
+	border-top: 3px solid;
+	padding-top: 10px;
 }
 
 .find-description {
 	text-align: left;
-	border-bottom: 3px solid;
 	margin-top: 0.5em;
 	margin-bottom: 1.5em;
+}
+
+.find-division {
+	margin-top: 80px;
 }
 
 @media (max-width: 486px) {

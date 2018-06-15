@@ -5,7 +5,7 @@
     <input type="text" placeholder="이름" />
     <input type="text" placeholder="아이디" />
     <input type="text" placeholder="휴대폰 번호" />
-    <button class="btn-login">FIND</button>
+    <button class="btn-login">확인</button>
   </div>
 </template>
 
