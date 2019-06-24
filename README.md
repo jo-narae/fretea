@@ -1,4 +1,4 @@
-# Fretea
+# Fretea!
 
 > Fretea mini project!
 
